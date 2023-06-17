@@ -2,10 +2,11 @@ import type { Component } from 'solid-js';
 
 import logo from './logo.svg';
 import styles from './App.module.css';
+import Card from './components/Card';
 
 const App: Component = () => {
   return (
-    <div class={styles.App}>
+    <div class="container m-auto">
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>
@@ -20,6 +21,11 @@ const App: Component = () => {
           Learn Solid
         </a>
       </header>
+      <div class="grid grid-cols-4 gap-10 my-4">
+      <Card/>
+      <Card/>
+      <Card/>
+      </div>
     </div>
   );
 };
